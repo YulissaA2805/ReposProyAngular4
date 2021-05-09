@@ -1,0 +1,21 @@
+.imagprincipal{
+    padding: 0;
+    margin-top:0px;
+}
+.parallax-container {
+    margin-top: -20px;
+    height: 300px;
+  }
+.valign-wrapper	{
+    height: 100%;
+}
+.txt1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    text-shadow: 10px 5px 5px black;
+}
+h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+    padding-top: 20px;
+}
