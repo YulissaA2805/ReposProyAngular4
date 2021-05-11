@@ -11,8 +11,8 @@
     padding:0;
     width: 300px;
     height: 280px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 .valign-wrapper	{
     height: 100%;
@@ -38,4 +38,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:black;
     padding-top: 20px;
+}
+.test{
+    border-width: 1px;
+    border-style: solid;
+    border-color: magenta;
 }
