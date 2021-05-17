@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+.wrapper {
+    margin-left: 230px;
+    margin-top: -20px;
+}
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    background-image: url("../../assets/resources/qs.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+h2 {
+    color:white;
+    margin: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  2fr 2fr 3fr;
+    margin: 50px;
+    gap: 30px;
+}
+.colheader {
+    text-align: center;
+    color: #4A4A4A;
+}
+.text {
+    font-size: 16px;
+}
+.stock img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+}
+.right {
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    font-size: 16px;
+}
+.right img {
+    width: 50px;
+}
