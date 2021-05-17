@@ -1,0 +1,23 @@
+.wrapper {
+    margin-left: 230px;
+    margin-top: -20px;
+}
+.hero {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 10px 0px;
+    background-image: url("../../assets/resources/sugerencia.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+h2 {
+    color:white;
+    margin: 50px;
+}
+.title{
+    font-weight: 700;
+}
+.desc{
+    font-size:large;
+}
