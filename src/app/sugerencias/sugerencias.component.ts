@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-sugerencias',
@@ -10,6 +10,12 @@ export class SugerenciasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  ngAfterViewInit(){
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems, {});
+    });
   }
 
 }
