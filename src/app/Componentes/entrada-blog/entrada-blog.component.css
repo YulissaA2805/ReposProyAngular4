@@ -1,0 +1,33 @@
+.test{
+    border-width: 1px;
+    border-style: solid;
+    border-color: magenta;
+}
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.fechayautor{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    color:black;
+    font-style: italic;
+    padding-top: 20px;
+}
+.hashtags{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    color:gray;
+    font-style: italic;
+}
+.imagen{
+    width: 900px;
+    height: auto;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+}
