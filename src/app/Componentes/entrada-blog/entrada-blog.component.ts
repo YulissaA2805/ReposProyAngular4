@@ -12,10 +12,12 @@ export class EntradaBlogComponent implements OnInit {
   ngOnInit(): void {
   }
   ngAfterViewInit(){
-    document.addEventListener('DOMContentLoaded', function() {
+
       var elems = document.querySelectorAll('.chips');
       var instances = M.Chips.init(elems, {});
-    });
+
+      var textNeedCount = document.querySelectorAll('#input_text, #textarea1');
+      M.CharacterCounter.init(textNeedCount);
   }
 
 }
