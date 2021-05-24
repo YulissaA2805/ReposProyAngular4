@@ -13,6 +13,7 @@
     background-image: url("../../assets/resources/qs.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 400px;
 }
 h2 {

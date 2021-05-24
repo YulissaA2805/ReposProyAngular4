@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EntradasPrincipalService } from '../../Services/entradas-principal.service'
 
 @Component({
   selector: 'app-resultados-busqueda',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultadosBusquedaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public entradasService: EntradasPrincipalService ) { }
 
   ngOnInit(): void {
+    // console.log(this.entradasService.getProducts());
+    this.getProducts();
+  }
+
+  getProducts(){
+    this.entradasService.getProducts().subscribe(
+      res => {
+        this.entradasService.products = res;
+        console.log(this.entradasService.products);
+      },
+      err => {
+        console.log(err);
+      }
+    )
   }
 
 }

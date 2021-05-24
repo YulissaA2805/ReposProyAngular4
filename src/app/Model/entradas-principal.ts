@@ -1,6 +1,9 @@
-interface EntradasPrincipal{
+export interface EntradasPrincipal{
     id: string
     title: string
-    description: string
+    date: string
+    author: string
+    content: string
+    tags: string
     img: string
 }
