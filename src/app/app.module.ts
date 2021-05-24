@@ -10,6 +10,8 @@ import { HeaderComponent } from './Componentes/header/header.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { MenuComponent } from './Componentes/menu/menu.component';
 import { ProductComponent } from './Componentes/product/product.component';
+import { EntradaBlogComponent } from './Componentes/entrada-blog/entrada-blog.component';
+import { ResultadosBusquedaComponent } from './Componentes/resultados-busqueda/resultados-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProductComponent } from './Componentes/product/product.component';
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    ProductComponent
+    ProductComponent,
+    EntradaBlogComponent,
+    ResultadosBusquedaComponent
   ],
   imports: [
     BrowserModule,
