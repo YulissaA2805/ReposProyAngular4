@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', component: PrincipalComponent},
   {path: 'quienessomos', component: QuienesSomosComponent},
   {path: 'sugerencias', component: SugerenciasComponent},
-  {path: 'entrada1', component: EntradaBlogComponent},
+  {path: 'entrada/:id_ent', component: EntradaBlogComponent},
   {path: 'search', component: ResultadosBusquedaComponent}
 ];
 
