@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { NotasSugerenciasService } from '../Services/notas-sugerencias.service';
 
 @Component({
   selector: 'app-sugerencias',
@@ -7,9 +8,10 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 export class SugerenciasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private notasService: NotasSugerenciasService) { }
 
   ngOnInit(): void {
+    console.log(this.notasService.getNotas);
   }
   ngAfterViewInit(){
     document.addEventListener('DOMContentLoaded', function() {

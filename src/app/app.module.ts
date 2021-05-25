@@ -13,6 +13,7 @@ import { MenuComponent } from './Componentes/menu/menu.component';
 import { ProductComponent } from './Componentes/product/product.component';
 import { EntradaBlogComponent } from './Componentes/entrada-blog/entrada-blog.component';
 import { ResultadosBusquedaComponent } from './Componentes/resultados-busqueda/resultados-busqueda.component';
+import { NotasComponent } from './Componentes/notas/notas.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ResultadosBusquedaComponent } from './Componentes/resultados-busqueda/r
     MenuComponent,
     ProductComponent,
     EntradaBlogComponent,
-    ResultadosBusquedaComponent
+    ResultadosBusquedaComponent,
+    NotasComponent
   ],
   imports: [
     BrowserModule,
