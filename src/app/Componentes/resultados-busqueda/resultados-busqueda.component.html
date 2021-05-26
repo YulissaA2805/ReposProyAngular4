@@ -1,2 +1,4 @@
-<h2 class="subtitulo">Resultados</h2>
-<app-product *ngFor="let product of entradasService.products" [data]= "product"></app-product>
+<form>
+    <input type="text" name="searchsText" placeholder="Busca por nombre o tag" [(ngModel)]="searchText"> 
+</form>
+<app-product *ngFor="let product of entradasService.products | filter:searchText" [data]= "product"></app-product>

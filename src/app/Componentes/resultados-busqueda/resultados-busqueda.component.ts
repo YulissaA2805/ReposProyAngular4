@@ -7,7 +7,7 @@ import { EntradasPrincipalService } from '../../Services/entradas-principal.serv
   styleUrls: ['./resultados-busqueda.component.css']
 })
 export class ResultadosBusquedaComponent implements OnInit {
-
+  searchText;
   constructor(public entradasService: EntradasPrincipalService ) { }
 
   ngOnInit(): void {

@@ -15,6 +15,8 @@ import { EntradaBlogComponent } from './Componentes/entrada-blog/entrada-blog.co
 import { ResultadosBusquedaComponent } from './Componentes/resultados-busqueda/resultados-busqueda.component';
 import { NotasComponent } from './Componentes/notas/notas.component';
 import { EntradaBlogListComponent } from './Componentes/entrada-blog-list/entrada-blog-list.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { EntradaBlogListComponent } from './Componentes/entrada-blog-list/entrad
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
