@@ -14,6 +14,7 @@ import { ProductComponent } from './Componentes/product/product.component';
 import { EntradaBlogComponent } from './Componentes/entrada-blog/entrada-blog.component';
 import { ResultadosBusquedaComponent } from './Componentes/resultados-busqueda/resultados-busqueda.component';
 import { NotasComponent } from './Componentes/notas/notas.component';
+import { EntradaBlogListComponent } from './Componentes/entrada-blog-list/entrada-blog-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NotasComponent } from './Componentes/notas/notas.component';
     ProductComponent,
     EntradaBlogComponent,
     ResultadosBusquedaComponent,
-    NotasComponent
+    NotasComponent,
+    EntradaBlogListComponent
   ],
   imports: [
     BrowserModule,

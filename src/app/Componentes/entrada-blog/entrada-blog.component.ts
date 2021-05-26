@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
-import { EntradasBlogService } from '../../Services/entradas-blog.service';
 
 @Component({
   selector: 'app-entrada-blog',
@@ -7,12 +6,13 @@ import { EntradasBlogService } from '../../Services/entradas-blog.service';
   styleUrls: ['./entrada-blog.component.css']
 })
 export class EntradaBlogComponent implements OnInit {
+  
   @Input() data:any;
-  constructor(public entradasBlogService: EntradasBlogService) { }
+  constructor() { }
 
   ngOnInit(): void {
     
-    this.getEntradasBlog();
+    
   }
   ngAfterViewInit(){
 
@@ -22,16 +22,6 @@ export class EntradaBlogComponent implements OnInit {
       var textNeedCount = document.querySelectorAll('#input_text, #textarea1');
       M.CharacterCounter.init(textNeedCount);
   }
-  getEntradasBlog(){
-    this.entradasBlogService.getEntradasBlog().subscribe(
-      res => {
-        this.entradasBlogService.entradasblog = res;
-        console.log(this.entradasBlogService.entradasblog);
-      },
-      err =>{
-        console.log(err);
-      }
-    )
-  }
+  
 
 }

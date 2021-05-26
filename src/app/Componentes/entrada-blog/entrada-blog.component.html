@@ -3,10 +3,10 @@
         <h5 class="titulo">{{data.title}}</h5>
     </div>
     <div style="margin-left: 230px; margin-bottom: 10px;" class="left-align col l1">
-        <small class="fechayautor">12/12/21</small>
+        <small class="fechayautor">{{data.date}}</small>
     </div>
     <div class="left-align col l2">
-        <small class="fechayautor">por Yulissa Álvarez</small>
+        <small class="fechayautor">por {{data.author}}</small>
     </div>
 </div>
 <div class="row">
@@ -20,16 +20,12 @@
 </div>
 <div class="row">
     <div style="width: 950px;" class="center-align col l8 push-l3">
-        <img class="imagen" src="assets/resources/imagen2.jpg">
+        <img class="imagen" src="assets/resources/{{data.img}}">
     </div>
 </div>
 <div class="row">
     <div style="width: 1119px; margin-left: 230px;" class="left-align col l12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse massa tortor, 
-            blandit ac ligula sed, dapibus tempor neque. Nam ac vehicula massa. Nulla rutrum felis 
-            at lorem laoreet, at consectetur odio tempus. Nulla facilisis diam in nunc elementum euismod. 
-            Aliquam ultricies sem ut justo lacinia fringilla in vitae sapien. Ut congue egestas sem quis 
-            sollicitudin
+        <p>{{data.content}}
         </p>
         <p>Vivamus molestie lacinia augue et suscipit. Vivamus commodo leo quam, quis efficitur ex 
             auctor in. Phasellus nunc mauris, imperdiet quis imperdiet quis, tristique vitae tellus. 
@@ -66,4 +62,4 @@
     </div>
 
 
-  </div>
+</div>
