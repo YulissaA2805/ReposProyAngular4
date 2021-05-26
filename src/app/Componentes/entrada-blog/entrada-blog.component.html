@@ -12,10 +12,7 @@
 <div class="row">
     <div style="width: 1119px; margin-left: 230px;" class="left-align col l12">
         <!--<small class="hashtags">#LoPeorLoMejor #Visto bueno #Visto malo #2021</small>-->
-        <div class="chip">#LoPeorLoMejor</div>
-        <div class="chip">#Visto bueno</div>
-        <div class="chip">#Visto malo</div>
-        <div class="chip">#2021</div>
+        <div *ngFor="let d of data.tags" class="chip">{{d}}</div>
     </div>
 </div>
 <div class="row">
