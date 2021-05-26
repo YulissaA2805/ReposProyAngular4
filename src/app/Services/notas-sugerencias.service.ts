@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Nota } from '../Model/notas';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NotasSugerenciasService {
-  private URL = "http://localhost:3000/api/notas";
-  constructor() { }
+  API_URL = "http://localhost:3000/api/notas";
+  notas: Nota[] | undefined;
+  constructor(private http:HttpClient) { }
 
   getNotas(){
-    return [];
+    return this.http.get<Nota[]>(this.API_URL);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-notas',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./notas.component.css']
 })
 export class NotasComponent implements OnInit {
-
+  @Input() data:any;
   constructor() { }
 
   ngOnInit(): void {

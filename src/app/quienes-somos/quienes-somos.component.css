@@ -3,7 +3,12 @@
 }
 .wrapper {
     margin-left: 230px;
+}
+
+/* Se agrego el parallax */
+.parallax-container {
     margin-top: -20px;
+    height: 300px;
 }
 .hero {
     display: flex;
@@ -19,6 +24,9 @@
 h2 {
     color:white;
     margin: 50px;
+    position:absolute;
+    bottom: 0%;
+    right: 0%;
 }
 .grid {
     display: grid;
