@@ -24,12 +24,6 @@
     <div style="width: 1119px; margin-left: 230px;" class="left-align col l12">
         <p>{{data.content}}
         </p>
-        <p>Vivamus molestie lacinia augue et suscipit. Vivamus commodo leo quam, quis efficitur ex 
-            auctor in. Phasellus nunc mauris, imperdiet quis imperdiet quis, tristique vitae tellus. 
-            Quisque cursus magna id lacus cursus, ut tincidunt enim rutrum. Donec urna nunc, egestas 
-            ut nisi in, rutrum pharetra velit. Class aptent taciti sociosqu ad litora torquent per 
-            conubia nostra, per inceptos himenaeos. Curabitur tempor auctor egestas. 
-        </p>
     </div>
 </div>
 
@@ -57,10 +51,10 @@
         <h6 style="text-align: center;">Comentarios</h6>
         <p style="font-style: italic; margin-left: 20px;">Comparte tu opinión con el resto del mundo.</p>
 
-        <p style="margin-left: 20px; font-style: italic; color: white;">Anónimo345 <small>13/12/21</small></p>
-        <div style="background-color: white; margin-left: 20px; margin-right: 20px; padding: 10px;" class="row">Muy interesante. Estoy de acuerdo.</div>
-        <p style="margin-left: 20px; font-style: italic; color: white;">Anónimo1212 <small>14/12/21</small></p>
-        <div style="background-color: white; margin-left: 20px; margin-right: 20px; padding: 10px;" class="row">XD</div>
+        <ng-container *ngFor="let com of data.comments">
+            <p style="margin-left: 20px; font-style: italic; color: white;">{{com.usuario}}</p>
+            <div style="background-color: white; margin-left: 20px; margin-right: 20px; padding: 10px;" class="row">{{com.comentario}}</div>
+        </ng-container>
     </div>
 
 

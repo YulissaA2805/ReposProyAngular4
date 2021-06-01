@@ -6,4 +6,5 @@ export interface EntradasPrincipal{
     content: string
     tags: string
     img: string
+    comments: string
 }
