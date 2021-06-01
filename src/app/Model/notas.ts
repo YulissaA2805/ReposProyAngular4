@@ -1,4 +1,4 @@
 export interface Nota{
-    id: string
     text: string
+    //color: string
 }

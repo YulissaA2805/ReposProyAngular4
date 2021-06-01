@@ -27,10 +27,24 @@ export class SugerenciasComponent implements OnInit {
     )
   }
 
+  addNota(data){
+    this.notasService.addNota(data).subscribe(
+      res => {
+        console.warn("result",res);
+      }
+    ),
+    err =>{
+      console.log(err);
+    }
+    
+  }
+
   ngAfterViewInit(){
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.parallax');
       var instances = M.Parallax.init(elems, {});
+      var elems2 = document.querySelectorAll('select');
+      var instances2 = M.FormSelect.init(elems2, {});
     });
   }
 }
