@@ -1,4 +1,7 @@
 <div class="row">
-    <app-entrada-blog *ngFor="let entrada of entradasBlogService.entradasblog" [data]="entrada"></app-entrada-blog>
+    <ng-container *ngIf="router.url === '/entrada/2'">
+        <app-entrada-blog *ngFor="let entrada of entradasBlogService.entradasblog; let i=index;" [data]="entrada"></app-entrada-blog>
+    </ng-container>
+    
 </div>
 

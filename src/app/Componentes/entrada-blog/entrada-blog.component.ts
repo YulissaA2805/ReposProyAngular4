@@ -1,4 +1,7 @@
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
+import { EntradasBlogService } from '../../Services/entradas-blog.service';
+import { NgForm } from '@angular/forms';
+import { Comentario } from 'src/app/Model/comentario';
 
 @Component({
   selector: 'app-entrada-blog',
@@ -6,9 +9,12 @@ import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
   styleUrls: ['./entrada-blog.component.css']
 })
 export class EntradaBlogComponent implements OnInit {
+  comentario1:Comentario = {};
   
   @Input() data:any;
-  constructor() { }
+  constructor(public entradasBlogService: EntradasBlogService) { 
+    this.comentario1 = new Comentario();
+  }
 
   ngOnInit(): void {
     
@@ -23,5 +29,16 @@ export class EntradaBlogComponent implements OnInit {
       M.CharacterCounter.init(textNeedCount);
   }
   
+  addComentario(form:NgForm){
+    console.log(this.comentario1);
+    //this.entradasBlogService.addComentario(form.value).subscribe(
+      //res => {
+        //console.warn("result",res);
+      //}
+    //),
+    //err =>{
+      //console.log(err);
+    //}
+  }
 
 }

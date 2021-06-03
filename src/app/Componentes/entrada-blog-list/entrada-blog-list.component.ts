@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EntradasBlogService } from '../../Services/entradas-blog.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entrada-blog-list',
@@ -8,7 +9,7 @@ import { EntradasBlogService } from '../../Services/entradas-blog.service';
 })
 export class EntradaBlogListComponent implements OnInit {
 
-  constructor(public entradasBlogService: EntradasBlogService) { }
+  constructor(public entradasBlogService: EntradasBlogService, public router: Router) { }
 
   ngOnInit(): void {
     //console.log(this.entradasBlogService.getEntradasBlog());

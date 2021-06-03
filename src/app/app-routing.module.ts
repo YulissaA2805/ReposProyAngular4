@@ -6,12 +6,13 @@ import { PrincipalComponent } from "./principal/principal.component";
 import { QuienesSomosComponent } from "./quienes-somos/quienes-somos.component";
 import { SugerenciasComponent } from "./sugerencias/sugerencias.component";
 import { EntradaBlogListComponent } from './Componentes/entrada-blog-list/entrada-blog-list.component';
+import { EntradaBlogUnicoComponent } from './Componentes/entrada-blog-unico/entrada-blog-unico.component';
 
 const routes: Routes = [
   {path: '', component: PrincipalComponent},
   {path: 'quienessomos', component: QuienesSomosComponent},
   {path: 'sugerencias', component: SugerenciasComponent},
-  {path: 'entrada/:id_ent', component: EntradaBlogListComponent},
+  {path: 'entrada/:id_ent', component: EntradaBlogUnicoComponent},//EntradaBlogListComponent
   {path: 'search', component: ResultadosBusquedaComponent}
 ];
 

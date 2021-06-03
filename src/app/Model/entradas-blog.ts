@@ -6,4 +6,5 @@ export interface EntradasBlog{
     content: string
     tags: string
     img: string
+    comments: [{usuario:string, comentario:string}]
 }

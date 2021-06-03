@@ -17,6 +17,7 @@ import { NotasComponent } from './Componentes/notas/notas.component';
 import { EntradaBlogListComponent } from './Componentes/entrada-blog-list/entrada-blog-list.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
+import { EntradaBlogUnicoComponent } from './Componentes/entrada-blog-unico/entrada-blog-unico.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     EntradaBlogComponent,
     ResultadosBusquedaComponent,
     NotasComponent,
-    EntradaBlogListComponent
+    EntradaBlogListComponent,
+    EntradaBlogUnicoComponent
   ],
   imports: [
     BrowserModule,
