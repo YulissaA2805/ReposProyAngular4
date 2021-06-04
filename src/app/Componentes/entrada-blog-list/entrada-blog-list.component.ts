@@ -27,4 +27,43 @@ export class EntradaBlogListComponent implements OnInit {
     )
   }
 
+  regresaInicio(){
+    if(this.router.url.endsWith("1")){
+      return 0;
+    }
+    else if(this.router.url.endsWith("2")){
+      return 1;
+    }
+    else if(this.router.url.endsWith("3")){
+      return 2;
+    }
+    else if(this.router.url.endsWith("4")){
+      return 3;
+    }
+    else{
+      console.log(this.router.url);
+      return 0;
+    }
+    
+  }
+  regresaFin(){
+    if(this.router.url.endsWith("1")){
+      return 1;
+    }
+    else if(this.router.url.endsWith("2")){
+      return 2;
+    }
+    else if(this.router.url.endsWith("3")){
+      return 3;
+    }
+    else if(this.router.url.endsWith("4")){
+      return 4;
+    }
+    else{
+      console.log(this.router.url);
+      return 4;
+    }
+    
+  }
+
 }

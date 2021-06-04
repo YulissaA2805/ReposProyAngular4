@@ -10,7 +10,7 @@
         <form #userPost="ngForm" (ngSubmit)="addNota(userPost.value)">
         <div class="col l10 push-l2">
             <div class="col l3">
-                <div class="card-panel blue lighten-1">
+                <div class="card-panel yellow">
 
                     <div class="input-field col s12">
                         <textarea id="text" class="materialize-textarea" type="text" name="text" ngModel required minlength="20" maxlength="110" size="10"></textarea>
@@ -63,7 +63,7 @@
                     </label>
                     </p>-->
                 </form>
-                <button type="submit" style="z-index: auto; margin-top: 8px;" class="btn waves-effect waves-light ">Enviar
+                <button type="submit" style="z-index: auto; margin-top: 8px;" class="btn waves-effect waves-light" onClick="window.location.reload();">Enviar
                     <i class="material-icons right">send</i>
                 </button>
             </div>

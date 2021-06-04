@@ -11,7 +11,6 @@
 </div>
 <div class="row">
     <div style="width: 1119px; margin-left: 230px;" class="left-align col l12">
-        <!--<small class="hashtags">#LoPeorLoMejor #Visto bueno #Visto malo #2021</small>-->
         <div *ngFor="let d of data.tags" class="chip">{{d}}</div>
     </div>
 </div>
@@ -22,7 +21,7 @@
 </div>
 <div class="row">
     <div style="width: 1119px; margin-left: 230px;" class="left-align col l12">
-        <p>{{data.content}}
+        <p [innerHTML]="data.content">{{data.content}}
         </p>
     </div>
 </div>
@@ -34,17 +33,17 @@
     <form style="width:500px; margin-left: 240px; background-color:#03D4FF; border-radius: 25px;" class="col l12 center-align" #userComentario="ngForm" (ngSubmit)="addComentario(userComentario)">
       <div class="row">
         <div style="margin-left: 20px; margin-bottom: 0px; margin-top: 20px;" class="input-field col l6">
-          <input id="input_text" style="background-color: white;" type="text" data-length="10" name="usuario" [(ngModel)]="comentario1.usuario">
+          <input id="input_text" style="background-color: white; padding-left: 20px;" type="text" data-length="20" name="usuario" [(ngModel)]="comentario1.usuario">
           <label style="margin-left: 10px;" for="input_text" name="nombre">Nombre</label>
         </div>
       </div>
       <div style="margin-left: 10px; margin-right: 10px; margin-top: 0px;" class="row">
         <div class="input-field col l12">
-          <textarea id="textarea1" style="background-color: white; padding: 20px; height: 150px;" class="materialize-textarea" data-length="120" name="comentario" [(ngModel)]="comentario1.comentario"></textarea>
+          <textarea id="textarea1" style="background-color: white; padding: 20px; height: 150px;" class="materialize-textarea" data-length="200" name="comentario" [(ngModel)]="comentario1.comentario"></textarea>
           <label style="margin-left: 10px;" for="textarea1">Comentario</label>
         </div>
       </div>
-      <a style="border-radius: 25px; margin-bottom:20px; background-color: #FFC131;" class="btn-large center-align" type="submit" (click)="addComentario(userComentario)">Enviar</a>
+      <a style="border-radius: 25px; margin-bottom:20px; background-color: #FFC131;" class="btn-large center-align" type="submit" (click)="addComentario(userComentario)" onClick="window.location.reload();">Enviar</a>
     </form>
 
     <div style="margin-left: 20px; background-color: #FFC131;" class="col l5">

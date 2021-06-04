@@ -1,6 +1,6 @@
 <div class="row">
-    <ng-container *ngIf="router.url === '/entrada/2'">
-        <app-entrada-blog *ngFor="let entrada of entradasBlogService.entradasblog; let i=index;" [data]="entrada"></app-entrada-blog>
+    <ng-container>
+        <app-entrada-blog *ngFor="let entrada of entradasBlogService.entradasblog | slice:regresaInicio():regresaFin(); let i=index;" [data]="entrada"></app-entrada-blog>
     </ng-container>
     
 </div>
