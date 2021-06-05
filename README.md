@@ -9,10 +9,10 @@ MongoDB: https://www.mongodb.org/downloads
 ### En este proyecto de angular (Front-end)
 Ng2SearchFilter: npm i ng2-search-filter --save
 ### En la aplicación de las apis (Back-end)
-Express y Morgan: npm i express morgan
-Nodemon: npm i nodemon -D
-Cors: npm i cors
-Mongoose: npm i mongoose
+Express y Morgan: npm i express morgan  
+Nodemon: npm i nodemon -D  
+Cors: npm i cors  
+Mongoose: npm i mongoose  
 
 ## Development server
 
