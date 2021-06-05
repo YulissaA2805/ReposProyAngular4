@@ -3,10 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
 ## Cosas necesarias de instalar para correr el proyecto y cómo instalarlas (comandos):
-### En la terminal de la computadora o link
+### En la terminal de la computadora o link de descarga
 Angular: npm install -g @angular/cli
 
 MongoDB: https://www.mongodb.org/downloads
+
+Node: https://nodejs.org/
 
 ### En este proyecto de angular (Front-end)
 Ng2SearchFilter: npm i ng2-search-filter --save
