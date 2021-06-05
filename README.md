@@ -8,6 +8,7 @@ Angular: npm install -g @angular/cli
 MongoDB: https://www.mongodb.org/downloads
 ### En este proyecto de angular (Front-end)
 Ng2SearchFilter: npm i ng2-search-filter --save
+Materialize: npm install --save @types/materialize-css
 ### En la aplicación de las apis (Back-end)
 Express y Morgan: npm i express morgan  
 Nodemon: npm i nodemon -D  
