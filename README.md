@@ -12,7 +12,7 @@ Ng2SearchFilter: npm i ng2-search-filter --save
 Express y Morgan: npm i express morgan
 Nodemon: npm i nodemon -D
 Cors: npm i cors
-Mongoose: 
+Mongoose: npm i mongoose
 
 ## Development server
 
